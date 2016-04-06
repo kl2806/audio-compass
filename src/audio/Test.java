@@ -6,9 +6,11 @@ public class Test {
 	public static void main(String[] args) throws IOException{
 		AudioMaster.init();
 		AudioMaster.setListenerData();
-		int buffer = AudioMaster.loadSound("audio/bounce.wav");
-	    Source sourceA = new Source(40, 10, 0);
-	    Source sourceB = new Source(-10, 0, 0);
+		int buffer = AudioMaster.loadSound("audio/laughfuzzball.wav");
+	    Source sourceA = new Source(10, 1, 10);
+	    //sourceA.setVelocity(100, 100, 100);
+	    Source sourceB = new Source(10, -1, -10);
+	    //sourceB.setVelocity(100, -100, 100);
 	    
 	    char c = ' ';
 	    while(c != 'q') {
